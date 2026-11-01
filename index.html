@@ -1,49 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blinkit</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <header>
-        <div class="head">
-            <div class="left-header">
-                <img src="https://clevertap.com/wp-content/uploads/2023/08/blinkit-logo_casestudy.png" 
-                    alt="Blinkit Logo" >
-                <!-- <div class="logobox flex">
-                    
-                    <div class="logo-text">
 
-                    
-                   
-                  </div>
-                </div> -->
-                <ul class="flex">
-                    <li><a href=""><h3> Delivery in 32 minutes</h3></a></li>
-                    <li><a href="">Shop</a></li>
-                    <li><a href="">Packaging Solutions</a></li>
-                    <li><a href="">Company</a></li>
-                    <li><a href="">Resouces</a></li>
-                    <li><a href="">Contact us</a></li>
-                </ul>
-            </div>
-            <div class="right-header flex align-center">
-                <a href="">Credit Application</a>
-                <button>
-                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
-                </button>
-                <button>Login</button>
-            </div>
+  <!-- = HEADER = -->
+  <header class="blinkit-header">
+    <div class="container header-inner">
+      <div class="brand-section">
+        <!--  Logo -->
+        <a href="#" class="logo-link" aria-label="Blinkit Home">
+          <span class="logo-text">blink<span class="logo-yellow">it</span></span>
+        </a>
+
+        <!--  Location Selector -->
+        <button class="location-picker" aria-label="Select Delivery Location">
+          <span class="delivery-time">Delivery in 8 minutes</span>
+          <span class="location-address">
+            Sector 62, Noida, Uttar Pradesh, India &#9662;
+          </span>
+        </button>
+      </div>
+
+      <!--  Search Bar -->
+      <div class="search-container">
+        <div class="search-bar">
+          <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input 
+            type="text" 
+            class="search-input" 
+            placeholder="Search 'milk', 'bread', 'chips'..." 
+            aria-label="Search for groceries and snacks"
+          />
         </div>
-    </header>
-    
-        
-    </section>
-</body>
+      </div>
 
+      <!-- Header Actions: Login & Cart -->
+      <div class="header-activity">
+        <button class="login-btn">Login</button>
+        <button class="cart-btn" aria-label="View Shopping Cart">
+          <div class="cart-badge">
+            <span class="cart-count">3 items</span>
+            <span class="cart-total">&#8377;158</span>
+          </div>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- main page -->
+  <main>
+    <!-- Hero sec -->
+    <section class="hero-banner-section">
+      <div class="container">
+        <div class="banner-card">
+          <div class="banner-content">
+            <span class="banner-tag">&#9889; 10-Minute Express</span>
+            <h1 class="banner-heading">Fresh Farm Groceries &amp; Daily Dairy</h1>
+            <img src = "./images/vecteezy_background-image-featuring-a-paper-bag-filled-with-healthy_27099994.jpg"alt = "not found" class="my-image-style">
+            <p class="banner-subtext">Delivered straight to your doorstep before your tea boils.</p>
+            <button class="banner-cta">Shop Essentials</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  Shop by Category -->
+    <section class="categories-section">
+      <div class="container">
+        <h2 class="section-heading">Shop by Category</h2>
+        <div class="category-grid">
+          <div class="category-card">
+            <div class="veg-fruit"></div>
+              <img src = "./images/vecteezy_fresh-vegetables-and-fruits-arranged-on-white-background-for_76647566.jpg" alt = "not found" />
+            <span class="category-title">Vegetables &amp; Fruits</span>
+          </div>
+          <div class="category-card">
+            <div class="dairy-bread"></div>
+            <img src = "./images/vecteezy_ai-generated-freshness-of-homemade-bread-milk-and-gourmet_39622643.jpg" alt = "not found" />
+            <span class="category-title">Dairy &amp; Breakfast</span>
+          </div>
+          <div class="category-card">
+            <div class="drinks"></div>
+            <img src = "images/vecteezy_top-view-lot-of-bottles-soft-drinks-in-colorful-and_14552930.jpg" alt = "not found" />
+            <span class="category-title">Cold Drinks &amp; Juices</span>
+          </div>
+          <div class="category-card">
+            <div class="snacks"></div>
+            <img src = "./images/vecteezy_variety-of-crunchy-snacks-in-a-box_75874206.jpg"  alt = "not found" />
+            <span class="category-title">Snacks &amp; Munchies</span>
+          </div>
+          <div class="category-card">
+            <div class="frozen"></div>
+            <img src = "./images/vecteezy_overhead-studio-shot-of-frozen-fruits-and-vegetables-in_73763594.jpg"  alt = "not found" />
+            <span class="category-title">Instant &amp; Frozen</span>
+          </div>
+          <div class="category-card">
+            <div class="tea"></div>
+            <img src = "images/vecteezy_hot-drink-coffee-and-tea-set-relax-recipe-background-concept_9300252.jpg"  alt = "not found" />
+            <span class="category-title">Tea &amp; Coffee</span>
+          </div>
+          <div class="category-card">
+            <div class="biscuit"></div>
+            <img src = "images/vecteezy_vintage-plate-displaying-assorted-cookies-surrounded-by_74207499.jpeg" alt = "not found" />
+            <span class="category-title">Bakery &amp; Biscuits</span>
+          </div>
+          <div class="category-card">
+            <div class="chocolate"></div>
+            <img src = "images/vecteezy_world-chocolate-day-and-international-chocolate-day_26416862.jpg" alt = "not found" />
+            <span class="category-title">Sweet Tooth</span>
+          </div>
+          <div class="category-card">
+            <div class="atta"></div>
+            <img src = "images/vecteezy_raw-rice-grain-and-dry-rice-plant-on-wooden-table-background_10091996.jpg" alt = "not found" />
+            <span class="category-title">Atta, Rice &amp; Dal</span>
+          </div>
+          <div class="category-card">
+            <div class="cleaning"></div>
+            <img src = "images/vecteezy_hygienic-blue-bathroom-cleanup-with-antiseptic-spray-and_25493097.jpg" alt = "not found" />
+            <span class="category-title">Cleaning Essentials</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  Dairy, Bread & Eggs -->
+    <section class="product-shelf-section">
+      <div class="container">
+        <div class="shelf-header">
+          <h2 class="section-heading">Dairy, Bread &amp; Eggs</h2>
+          <a href="#" class="see-all-link">see all</a>
+        </div>
+        
+        <div class="product-grid">
+          <!-- Amul Milk -->
+          <article class="product-card">
+            <span class="delivery-badge">&#9889; 8 MINS</span>
+            <div class="product-image-box"></div>
+            <img src = "./images/vecteezy_creamy-white-milk-splash-in-glass-bowl-with-droplets-on-surface_71836443.jpg" alt = "not found"/>
+            <div class="product-info">
+              <h3 class="product-name">Amul Taaza Toned Fresh Milk</h3>
+              <span class="product-unit">500 ml</span>
+            </div>
+            <div class="product-bottom-row">
+              <div class="price-box">
+                <span class="current-price">&#8377;38</span>
+                <span class="original-price">&#8377;48</span>
+              </div>
+              <button class="add-btn">ADD</button>
+            </div>
+          </article>
+
+          <!--  Bread -->
+          <article class="product-card">
+            <span class="delivery-badge">&#9889; 8 MINS</span>
+            <div class="product-image-box"></div>
+            <div class="product-info">
+              <img src = "images/charles-chen-e83dQJ-BMog-unsplash.jpg" alt = "not found"/>
+              <h3 class="product-name">Harvest Gold White Bread</h3>
+              <span class="product-unit">400 g</span>
+            </div>
+            <div class="product-bottom-row">
+              <div class="price-box">
+                <span class="current-price">&#8377;30</span>
+                <span class="original-price">&#8377;35</span>
+              </div>
+              <button class="add-btn">ADD</button>
+            </div>
+          </article>
+
+          <!--  Butter -->
+          <article class="product-card">
+            <span class="delivery-badge">&#9889; 8 MINS</span>
+            <div class="product-image-box"></div>
+            <div class="product-info">
+              <img src = "images/sorin-gheorghita-094mP_CBdpM-unsplash.jpg" alt = "not found"/>
+              <h3 class="product-name">Amul Salted Butter</h3>
+              <span class="product-unit">100 g</span>
+            </div>
+            <div class="product-bottom-row">
+              <div class="price-box">
+                <span class="current-price">&#8377;56</span>
+                <span class="original-price">&#8377;60</span>
+              </div>
+              <button class="add-btn">ADD</button>
+            </div>
+          </article>
+
+          <!-- Eggs -->
+          <article class="product-card">
+            <span class="delivery-badge">&#9889; 8 MINS</span>
+            <div class="product-image-box"></div>
+            <img src = "images/denny-sachtleben-8zuy_d2AG5c-unsplash.jpg" alt = "not found" />
+            <div class="product-info">
+              <h3 class="product-name">Eggoz Farm Fresh White Eggs</h3>
+              <span class="product-unit">6 pieces</span>
+            </div>
+            <div class="product-bottom-row">
+              <div class="price-box">
+                <span class="current-price">&#8377;58</span>
+                <span class="original-price">&#8377;65</span>
+              </div>
+              <button class="add-btn">ADD</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!--  Snacks & Munchies -->
+    <section class="product-shelf-section">
+      <div class="container">
+        <div class="shelf-header">
+          <h2 class="section-heading">Snacks &amp; Munchies</h2>
+          <a href="#" class="see-all-link">see all</a>
+        </div>
+        
+        <div class="product-grid">
+          <!-- Lay's -->
+          <article class="product-card">
+            <span class="delivery-badge">&#9889; 8 MINS</span>
+            <div class="product-image-box"></div>
+            <img src = "images/zoshua-colah-BGJ8fnaU9KY-unsplash.jpg" alt="not found" />
+            <div class="product-info">
+              <h3 class="product-name">Lay's India's Magic Masala</h3>
+              <span class="product-unit">50 g</span>
+            </div>
+            <div class="product-bottom-row">
+              <div class="price-box">
+                <span class="current-price">&#8377;20</span>
+                <span class="original-price">&#8377;20</span>
+              </div>
+              <button class="add-btn">ADD</button>
+            </div>
+          </article>
+
+          <!--  Aloo Bhujia -->
+          <article class="product-card">
+            <span class="delivery-badge">&#9889; 8 MINS</span>
+            <div class="product-image-box"></div>
+            <div class="product-info">
+              <img src = "images/gurth-bramall-LZEmC6vQFc0-unsplash.jpg" alt="not found"/>
+              <h3 class="product-name">Haldiram's Aloo Bhujia</h3>
+              <span class="product-unit">200 g</span>
+            </div>
+            <div class="product-bottom-row">
+              <div class="price-box">
+                <span class="current-price">&#8377;55</span>
+                <span class="original-price">&#8377;60</span>
+              </div>
+              <button class="add-btn">ADD</button>
+            </div>
+          </article>
+
+          <!--  Doritos -->
+          <article class="product-card">
+            <span class="delivery-badge">&#9889; 8 MINS</span>
+            <div class="product-image-box"></div>
+            <img src = "./images/yakshi-virmani-JqDn6CvyVhU-unsplash.jpg" alt="not found"/>
+            <div class="product-info">
+              <h3 class="product-name">Doritos Cheese Supreme Nachos</h3>
+              <span class="product-unit">60 g</span>
+            </div>
+            <div class="product-bottom-row">
+              <div class="price-box">
+                <span class="current-price">&#8377;30</span>
+                <span class="original-price">&#8377;30</span>
+              </div>
+              <button class="add-btn">ADD</button>
+            </div>
+          </article>
+
+          <!-- Popcorn -->
+          <article class="product-card">
+            <span class="delivery-badge">&#9889; 8 MINS</span>
+            <div class="product-image-box"></div>
+            <div class="product-info">
+              <img src = "./images/yasaman-abedini-r8JrnhACEdg-unsplash.jpg" alt="not found"/>
+              <h3 class="product-name">Act II Golden Sizzle Popcorn</h3>
+              <span class="product-unit">85 g</span>
+            </div>
+            <div class="product-bottom-row">
+              <div class="price-box">
+                <span class="current-price">&#8377;35</span>
+                <span class="original-price">&#8377;40</span>
+              </div>
+              <button class="add-btn">ADD</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- = FOOTER = -->
+  <footer class="blinkit-footer">
+    <div class="container">
+      <div class="footer-columns">
+        <div>
+          <h4 class="footer-col-title">blink<span class="logo-yellow">it</span></h4>
+          <p class="footer-desc">
+            India's last minute app. Everything you need delivered in 10 minutes.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Categories</h4>
+          <ul class="footer-links">
+            <li><a href="#">Dairy &amp; Breakfast</a></li>
+            <li><a href="#">Munchies &amp; Chips</a></li>
+            <li><a href="#">Cold Drinks &amp; Juices</a></li>
+            <li><a href="#">Instant &amp; Frozen Food</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press &amp; Media</a></li>
+            <li><a href="#">Partner With Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Blink Commerce Private Limited</span>
+        <span>Superfast 10-Minute Delivery</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
 </html>
